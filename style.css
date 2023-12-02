@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: .5rem
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+
+    >h2{
+        color:red
+    }
+}
+
+#gameCanvas{
+    background-color: #F7E697;
+    border: 1rem solid #BCAD76;
+}
+
+.gameover-container{
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    inset: 0;
+
+    display: grid;
+    place-content: center;
+    color: white;
+    text-align: center;
+    gap:2rem;
+
+    &.hidden{
+        display: none;
+    }
+
+    >button{
+        padding: .5rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+}
